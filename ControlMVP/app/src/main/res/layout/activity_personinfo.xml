@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/stroke">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/icon_bg"
+            android:src="@drawable/personal_details_default_portrait"/>
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:text="@string/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_icon"
+            android:textSize="15sp"
+            android:textColor="#333333" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/employee_id" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/name"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/department"/>
+
+            <TextView
+                android:id="@+id/tv_department"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/duty"/>
+
+            <TextView
+                android:id="@+id/tv_duty"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/entryDate"/>
+
+            <TextView
+                android:id="@+id/tv_entry_date"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stroke"
+        android:orientation="vertical"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/tv_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:gravity="start|center_vertical"
+                android:text="@string/changePwd"/>
+
+        <include layout="@layout/info_layout_divider"/>
+
+            <TextView
+                android:id="@+id/tv_query"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:gravity="start|center_vertical"
+                android:text="@string/queryFriends"/>
+
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:id="@+id/locked_account"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/lockAccount"/>
+
+            <ImageView
+                android:id="@+id/iv_lock"
+                style="@style/MoreImageView"
+                android:src="@drawable/locked"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="278dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_button"
+        android:text="@string/send_message"
+        android:textSize="15sp"
+        android:textColor="#fefefe" />
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/stroke">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp" >
+            <ImageView
+                android:id="@+id/iv_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/group_details_default_portrait"/>
+
+            <ImageView
+                android:id="@+id/iv_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/group_details_default_portrait" />
+
+            <ImageView
+                android:id="@+id/iv_icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/group_details_default_portrait" />
+
+            <ImageView
+                android:id="@+id/iv_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/icon_bg"
+                android:src="@drawable/group_details_default_portrait" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/rl"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/llModify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignStart="@+id/tv_group_name"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_group_name">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/modify"
+                android:textSize="12sp"
+                android:textColor="#666666"/>
+
+            <ImageView
+                android:id="@+id/iv_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="3dp"
+                android:src="@drawable/edit" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/crowdID" />
+
+            <TextView
+                android:id="@+id/tv_mucID"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:id="@+id/tv_memberCount"
+                style="@style/ItemTextView"
+                android:text="群成员总数(11)" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/iv_member_list"
+                android:text="@string/memberList"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/iv_member_list"
+                style="@style/InfoTextView"
+                android:src="@drawable/more" />
+        </RelativeLayout>
+
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/topic" />
+
+            <TextView
+                android:id="@+id/tv_topic"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+
+        <include layout="@layout/info_layout_divider"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                style="@style/ItemTextView"
+                android:text="@string/autoEnter" />
+
+            <TextView
+                android:id="@+id/tv_autoEnter"
+                style="@style/InfoTextView" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

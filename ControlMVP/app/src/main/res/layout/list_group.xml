@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+    <include layout="@layout/view_line" />
+    <TextView
+        android:id="@+id/tv_memberCount"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="12"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+    <include layout="@layout/view_line" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_destruction_group"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:background="@drawable/button_bg"
+            android:text="销毁群"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_send_message"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/btn_destruction_group"
+            android:background="@drawable/button_bg"
+            android:drawableLeft="@drawable/chat"
+            android:text="群聊"
+            android:paddingLeft="6dp"
+            android:gravity="center"
+            android:textColor="#007dc1"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>

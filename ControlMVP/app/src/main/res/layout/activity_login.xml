@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="24sp"
+        android:layout_marginTop="93dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"/>
+
+    <com.lens.controlmvp.widget.AccountEditText
+        android:id="@+id/et_account"
+        android:layout_marginTop="58dp"
+        android:layout_width="307dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:hint="@string/account"
+        android:background="@null"
+        android:paddingStart="9dp"
+        android:textSize="16sp"
+        android:textColor="#ffffff" />
+
+    <com.lens.controlmvp.widget.PasswordToggleEditText
+        android:id="@+id/et_pwd"
+        android:layout_width="307dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        android:paddingStart="9dp"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="308dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/selector_btn_login"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="16sp"/>
+
+</LinearLayout>
