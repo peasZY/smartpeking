@@ -1,0 +1,3 @@
+[submodule "peasweather"]
+	path = peasweather
+	url = https://github.com/peasZY/peasweather.git
